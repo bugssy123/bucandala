@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bucandala 1 | Official Website of Barangay Bucandala 1</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="icon" type="image/png" href="image/logo.jpg">
+  <link rel="stylesheet" href="css/index.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+  <div style="background-color: #12c009; color: black; font-weight: bold; height: 50px; overflow: hidden; display: flex; align-items: center;">
+    <marquee behavior="scroll" direction="left" scrollamount="5" style="width: 100%;">
+      🔔 Latest Announcement: Barangay Assembly on April 10, 2025 | Free Medical Check-up on April 15, 2025 | Stay Updated with Barangay Bucandala 1!
+    </marquee>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+
+  
+  <div class="hero-section">
+    <img src="image/imus.png" alt="" class="hero-image">
+    <img src="image/logo.png" alt="" class="hero">
+    <div class="text-overlay">
+      <h4>Discover The District</h4>
+      <h1 class="main-heading"><strong>Barangay Bucandala 1</strong></h1>
+      <p>Cavite, get your opportunity to move forward together.</p>
+      <a href="https://www.facebook.com/profile.php?id=100085126650282" class="learn-more">Visit Our Facebook Page →</a>
+    </div>
+  </div>
+
+  <section class="about-section">
+    <div class="container-about">
+      <div class="about-left">
+        <img src="image/team.jpg" alt="Barangay Bucandala 1 Team" class="about-image">
+      </div>
+      <div class="about-right">
+        <h3>About us</h3>
+        <h1>If you change your city,<br>you're changing the world.</h1>
+        <p>Barangay Bucandala 1 is determined to address everything that hinders its way to be the best.</p>
+
+        <div class="about-buttons">
+          <button class="about-btn" onclick="showContent('mission')">Our Mission</button>
+          <button class="about-btn" onclick="showContent('vision')">Our Vision</button>
+          <button class="about-btn" onclick="showContent('goal')">Our Goal</button>
+        </div>
+
+        <p class="about-description" id="content-text">
+          A Barangay that is God-centered, competent, orderly, honest, peaceful, credible, gender responsive and abides the Code of Conduct.
+        </p>
+
+        <div class="contact-info">
+          <p><strong>Call To Ask Any Questions</strong></p>
+          <p class="contact-number">(046) 884 6599</p>
+          <p><strong>Barangay Captain</strong></p>
+          <p class="captain-name">Santiaguel, Ferdinand Apolinar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <p>&copy; 2025 BARANGAY BUCANDALA 1. All rights reserved.</p>
+  </div>
+
+  <!-- Chatbot iframe -->
+  <iframe src="chatbot.html"
+    style="position: fixed; bottom: 10px; right: 10px; width: 340px; height: 800px; border: none; z-index: 999;">
+  </iframe>
+
+  <!-- JavaScript for dynamic content -->
+  <script>
+    function showContent(type) {
+      let content = "";
+
+      if (type === "vision") {
+        content = "Our vision is to become a progressive and peaceful barangay, united in development and service.";
+      } else if (type === "mission") {
+        content = "Our mission is to provide efficient public service through transparency, inclusivity, and innovation.";
+      } else if (type === "goal") {
+        content = "Our goal is to improve community welfare, enhance infrastructure, and foster sustainable growth.";
+      }
+
+      document.getElementById("content-text").textContent = content;
+    }
+  </script>
+
+</body>
+</html>
